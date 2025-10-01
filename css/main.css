@@ -10,7 +10,7 @@
 */
 /** 00 css variable */
 :root{
-    --body-color: hsl(128, 75%, 38%);
+    --body-color: hsla(5, 54%, 24%, 0.849);
     --page-color:hsla(40, 34%, 73%, 0.8);
     --sidebar-color: rgb(212, 54, 23);
     --h1-color: hsla(70, 20%, 50%, .5);
@@ -135,4 +135,69 @@ li{
 }
 #zen-resources{
     visibility: hidden;
+}
+
+
+/* 04: transitions, animations, selector practice */
+/* selector */
+a:hover{
+    /* picking a style */
+    font-size: 1.6em;
+
+}
+h3:hover{
+    color:blue;
+}
+div.explanation:active{
+    top: 60vh;
+    height: 90vh;
+}
+p::first-line{
+    font-size: 2.0em;
+    text-transform: lowercase;
+
+}
+div.requirements:active{
+    top: 60vh;
+    height: 90vh;
+}
+p::first-line{
+    font-size: 2.0em;
+    text-transform: lowercase;
+}
+div.benefits:active{
+    top: 60vh;
+    height: 90vh;
+}
+p::first-line{
+    font-size: 2.0em;
+    text-transform: lowercase;
+}
+div.participation:active{
+    top: 60vh;
+    height: 90vh;
+}
+p::first-line{
+    font-size: 2.0em;
+    text-transform: lowercase;
+}
+p:nth-child(2n){
+    background-color: rgb(224, 228, 188);
+}
+p:nth-child(2n+1){
+    background-color: rgb(226, 214, 206);
+}
+
+/* trying text shadow, box-shadow */
+ul{
+    box-shadow: 2px 2px 100px rgb(0, 0, 0);
+}
+/* border radius of the tab */
+div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3{
+    border-radius: 10% 50% 0% 0%;
+    border-top: solid bisque 2px;
+    padding-left: 5px;
+}
+ul{
+    list-style-image: url(../img/star.png);
 }
